@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title id="fav_title">ΠαΘΣ - route</title>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+
+        <link rel="shortcut icon" type="image/x-icon" href="img/path.png" />
+
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+
+        <link rel="stylesheet" href="css/leaflet_1.4.0.css"/>
+        <script src="assets/leaflet/leaflet_1.4.0.js" ></script>
+        <script src="assets/leaflet/Leaflet.ImageOverlay.Rotated.js"></script>
+
+        <script src="assets/js/core/jquery.min.js"></script>	
+        <script src="assets/bootstrap/bootstrap.min.js" ></script>
+
+        <!-- ------------------------------- image viewer------------------------------ -->
+
+        <link rel="stylesheet" href="assets/viewer/all.css" >
+        <link rel="stylesheet" href="assets/viewer/viewer.css" >
+        <link rel="stylesheet" href="assets/viewer/main.css">
+
+        <!-- Scripts -->
+
+        <link rel="stylesheet" href="css/paths.css">
+
+        <style>
+            .leaflet-buttons-control-img {
+
+                width: 34px;
+                height: 34px;
+            }
+        </style>
+        <script src="assets/d3/d3.min.js" charset="utf-8"></script>
+
+        <!-- leaflet-gpx -->
+        <script src="assets/leaflet/gpx.js"></script>
+        <!-- leaflet-elevation -->
+        <link rel="stylesheet" href="assets/leaflet/leaflet-elevation.min.css" />
+        <script src="assets/leaflet/leaflet-elevation.min.js"></script>
+
+        <style>
+            .data-summary {
+                font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+                font-size: 12px;
+                position: absolute;
+                bottom: 0;
+                left: 45px;
+            }
+
+            .data-summary .summaryvalue {
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div style="height:800px;" id='map'>
+
+        </div>
+
+        <script src="assets/viewer/viewer.js" ></script>
+        <script src="assets/viewer/jquery-viewer.js"></script>
+
+        <script src="assets/pouchdb/pouchdb-7.0.0.min.js"></script>   
+        <script type="text/javascript" src="all_paths.js"></script> 
+
+        <script>
+            document.cookie = "path=/;SameSite=None";
+        </script>
+
+
+    </body>
+</html>

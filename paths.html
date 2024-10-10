@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title id="fav_title">ΠαΘΣ - route</title>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+
+        <link rel="shortcut icon" type="image/x-icon" href="img/path.png" />
+
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+
+        <link rel="stylesheet" href="css/leaflet_1.4.0.css"/>
+        <script src="assets/leaflet/leaflet_1.4.0.js" ></script>
+        <script src="assets/leaflet/Leaflet.ImageOverlay.Rotated.js"></script>
+
+        <script src="assets/js/core/jquery.min.js"></script>	
+        <script src="assets/bootstrap/bootstrap.min.js" ></script>
+
+        <!-- ------------------------------- image viewer------------------------------ -->
+
+        <link rel="stylesheet" href="assets/viewer/all.css" >
+        <link rel="stylesheet" href="assets/viewer/viewer.css" >
+        <link rel="stylesheet" href="assets/viewer/main.css">
+
+        <!-- Scripts -->
+
+        <link rel="stylesheet" href="css/paths.css">
+
+        <style>
+            .leaflet-buttons-control-img {
+
+                width: 34px;
+                height: 34px;
+            }
+        </style>
+        <script src="assets/d3/d3.min.js" charset="utf-8"></script>
+
+        <!-- leaflet-gpx -->
+        <script src="assets/leaflet/gpx.js"></script>
+        <!-- leaflet-elevation -->
+        <link rel="stylesheet" href="assets/leaflet/leaflet-elevation.min.css" />
+        <script src="assets/leaflet/leaflet-elevation.min.js"></script>
+
+        <style>
+            .data-summary {
+                font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+                font-size: 12px;
+                position: absolute;
+                bottom: 0;
+                left: 45px;
+            }
+
+            .data-summary .summaryvalue {
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="container">
+
+            <!-- Portfolio Item Heading -->
+            <div  style="font-size:20px; padding-left:90%;" >
+                <a style="cursor:pointer;" id="lang_en" onclick="switch_english()">EN </a>
+                <a style="cursor:pointer;" id="lang_gr" onclick="switch_greek()">GR</a>
+            </div>
+
+            <h1 class="my-4" id="path_id"></h1>
+
+            <!-- Portfolio Item Row -->
+            <div class="row">
+
+                <div class="col-md-8">
+                    <div style="height:500px;" id='map'>
+
+                    </div> 
+
+                    <div style="width:100%" id="elevation-div" class="leaflet-control elevation"></div>
+
+                    <div id="data-summary" class="data-summary">
+                        <span class="totlen">
+                            <span class="summarylabel">Total Length: </span>
+                            <span class="summaryvalue">0</span>
+
+                        </span> &mdash; 
+                        <span class="maxele">
+                            <span class="summarylabel">Max Elevation: </span>
+                            <span class="summaryvalue">0</span>
+
+                        </span>
+                        &mdash; 
+                        <span class="minele">
+                            <span class="summarylabel">Min Elevation: </span>
+                            <span class="summaryvalue">0</span>
+                        </span>
+                    </div>
+
+                    <img class="img-fluid" src="http://placehold.it/750x50000" alt=""> 
+                </div>
+                <div class="col-md-4">
+                    <h3 class="my-3" id="description_label"></h3>
+                    <p id='description'></p>
+                    <h3 class="my-3" id ="details_label" ></h3>
+                    <ul id ="details"></ul>
+                    
+                    
+                     <h3 class="my-3" id ="activities_label" ></h3>
+                     <ul id ="activities">                          
+                     </ul>
+                    
+                    
+                </div>
+            </div>
+            <hr>
+            <div class="row">                
+                <div class="col-sm-8 col-md-10">
+                    <h3 id ='gallery_label'></h3>
+                    <hr>
+                    <div class="docs-galley mb-3">
+                        <ul id="images" class="docs-pictures clearfix">
+                            <!--    <li><img data-original="paths/perspective.jpg" src="paths/1.png" alt="Prespective"></li>
+                                <li><img data-original="paths/elevationProfile.jpg" src="paths/2.png" alt="Elevation"></li>
+                                <li><img data-original="paths/hop.png" src="paths/3.png" alt="Path"></li>
+                                <li><img data-original="paths/pezoporikes.jpg" src="paths/4.png" alt="pezoporikes"></li>
+                            -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <script src="assets/viewer/viewer.js" ></script>
+            <script src="assets/viewer/jquery-viewer.js"></script>
+
+            <script src="assets/pouchdb/pouchdb-7.0.0.min.js"></script>   
+            <script type="text/javascript" src="paths.js"></script> 
+
+            <script>
+                document.cookie = "path=/;SameSite=None";
+            </script>
+        </div>
+    </body>
+</html>
