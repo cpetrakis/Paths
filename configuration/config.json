@@ -1,7 +1,7 @@
 {
-    "db" : "http://localhost:5984",
+    "db" : "DB_URL",
     "db_suffix" : "",
-    "FetchBinFile": "http://139.91.183.60:8181/PathsAdmin/FetchBinFile?file=",
+    "FetchBinFile": "ADMIN_WEBAPP_URL/FetchBinFile?file=",
     
     "init": {
         "center": { 
