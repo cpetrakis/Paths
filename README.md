@@ -2,6 +2,10 @@
 
 **Paths** is a web application that allows users to display and explore routes in **GPX** and **KML** formats. It provides detailed information about the routes such as description, distance, and elevation, and visualizes them on a map with multiple layers. The app is multilingual and built using **JavaScript**, **HTML**, and **CSS**.
 
+![Alt text](img/paths.gif)
+
+**Live Demo [here.](https://petrakis.info/Paths/)**
+
 ## Features
 
 - **Display GPX and KML Routes**: Upload and visualize routes in GPX and KML formats.
@@ -13,14 +17,22 @@
 
 ## Screenshots
 
-_Add screenshots or a GIF demonstrating the app's functionality here._
+![Alt text](img/screen1.png)
+
+![Alt text](img/screen2.png)
+
+![Alt text](img/screen3.png)
+
+![Alt text](img/screen4.png)
 
 ## Technologies Used
 
-- **Frontend**: JavaScript, HTML, CSS
-- **Maps**: Integrates with mapping libraries like Leaflet or Google Maps (replace this with the actual libraries you use)
-- **Route Files**: Supports GPX and KML file formats for routes
-- **Localization**: JavaScript-based localization for multilingual support
+* [jQuery](https://jquery.com/)
+* [Bootstrap](https://getbootstrap.com/)
+* [Leaflet](https://leafletjs.com/)
+* [Paper Kit](https://github.com/creativetimofficial/paper-kit-2)
+* [CouchDB](https://couchdb.apache.org/)
+* [PouchDB](https://pouchdb.com/)
 
 ## Getting Started
 
@@ -30,32 +42,34 @@ To run **Paths** locally, you will need:
 
 - A modern web browser (e.g., Chrome, Firefox, Edge)
 - Optionally, a local web server to serve the files
+- A running PathsAdmin backend (contact for more details)
 
-### Installation
+### 2. Installation and deployment ###
 
-1. **Clone the repository**:
+Three simple steps: Clone - Deploy - Run.
 
-   ```bash
-   git clone https://github.com/yourusername/paths.git
-   cd paths
-2. **Open the index.html file in your browser:
+1. Copy the project folder into the desired location. 
+
+2. Deploy (drop the folder into your desired web appliction server (eg webapps for Apache Tomcat)).
+
+3. Run 
 
 
 ## Configuration
-Languages: You can add more language translations in the /js/lang/ folder (if you're using a separate language file).
-Maps: To change the map layers or configurations, modify the mapping library initialization in app.js.
+
+This [configuration file](https://github.com/cpetrakis/Paths/blob/main/configuration/config.json) contains all the cofiguration that have to be done in order to deploy the tool
 
 ## Usage
-Upload a GPX or KML file by clicking the "Upload Route" button.
-View the route on the map and interact with it:
-Switch between map layers (e.g., terrain, satellite).
-View basic route details such as distance and description.
-Check the elevation profile for the route
+Navigate the uploaded routes and paths
+Apply your prefered filters in order to search acoording your preferences
+Navigate and explore paths
 
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the Apache-2.0 license - see the LICENSE file for details.
 
-## Contact
+### 3. Contact ### 
+
+Kostas Petrakis 
 
 <petrakis1@gmail.com>
